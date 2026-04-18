@@ -82,20 +82,17 @@
 
   <section id="contact" class="section contact-section">
         <h2>Let's Connect</h2>
-       <form action="https://api.web3forms.com/submit" method="POST">
-        <div class="input-group">
-            <input type="hidden" name="access_key" value="9815426c-f014-4070-9b68-3f8e37674fe9">
-        </div>    
-        <div class="input-group">
-            <input type="text" name="name" required placeholder="Your Name">
-        </div>
-        <div class="input-group">
-            <input type="email" name="email" required placeholder="Your Email">
-        </div>
-        <div class="input-group">
-             <textarea name="message" required placeholder="Your Message"></textarea>
-        </div>    
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <form id="contactForm" class="contact-form">
+            <div class="input-group">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="input-group">
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="input-group">
+                <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" id="submitBtn" class="btn btn-primary">Send Message</button>
         </form>
     </section>
 
